@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Ut!lz",
   description: "My own store for my small UI components",
+  srcDir: "src",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
