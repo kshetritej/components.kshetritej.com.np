@@ -16,11 +16,16 @@ export default defineConfig({
         link: "introduction"
       },
       {
+        text: 'Functions',
+        items: [
+          { text: 'Social Share', link: '/functions/social-share' },
+        ]
+      },
+      {
         text: 'Components',
         items: [
           { text: 'Password Show/Hide Toggle', link: '/components/password-toggle' },
           { text: 'Status Badge', link: '/components/status-badge' },
-          { text: 'Social Share', link: '/components/social-share' },
         ]
       }
     ],
