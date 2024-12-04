@@ -7,7 +7,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Components', link: '/components/status-badge.md' },
+      { text: 'Functions', link: '/functions/status-badge.md' },
+      { text: 'Components', link: '/components/password-toggle.md' },
     ],
 
     sidebar: [
@@ -19,13 +20,13 @@ export default defineConfig({
         text: 'Functions',
         items: [
           { text: 'Social Share', link: '/functions/social-share' },
+          { text: 'Status Badge', link: '/functions/status-badge' },
         ]
       },
       {
         text: 'Components',
         items: [
           { text: 'Password Show/Hide Toggle', link: '/components/password-toggle' },
-          { text: 'Status Badge', link: '/components/status-badge' },
         ]
       }
     ],
