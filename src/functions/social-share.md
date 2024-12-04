@@ -1,6 +1,5 @@
 # Social Share
 Functions for sharing links on social media.
-
 **Example Usage**
 ```ts
 shareOnFacebook('https://www.google.com')
