@@ -20,13 +20,14 @@ export default defineConfig({
         text: 'Functions',
         items: [
           { text: 'Social Share', link: '/functions/social-share' },
-          { text: 'Status Badge', link: '/functions/status-badge' },
+          { text: 'Status Badge', link: '/functions/status-badge', },
         ]
       },
       {
         text: 'Components',
         items: [
           { text: 'Password Show/Hide Toggle', link: '/components/password-toggle' },
+          { text: 'Dynamic Breadcrumb', link: '/components/dynamic-breadcrumb' },
         ]
       }
     ],

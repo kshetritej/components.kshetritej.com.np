@@ -4,7 +4,8 @@ outline: deep
 # Status Badge
 Custom function for rendering a badge based on the status like active, disabled, ordered, cancelled, etc.
 
-## Code
+## Code v1
+This version uses a switch statement to return the appropriate badge color based on the status. Used within `className` with `cn` utility to style the badge.
 ```ts
 export const statusBadge = (status: string) => {
   switch (status.toLowerCase()) {
@@ -27,8 +28,22 @@ export const statusBadge = (status: string) => {
   }
 };
 ```
-
-## Example Usage
+## Code v2
+This version uses a switch statement to return the appropriate badge based on the status. More conditions can be added as per the need. It directly returns the badge component.
 ```ts
-  statusBadge(order?.orderStatus.toLowerCase());
+export function renderStatus(status: string) {
+    switch (status) {
+        case "processing":
+            return <span className="border-2 border-yellow-500 py-1 px-2 rounded-2xl  ">Processing</span>
+        case "pending":
+            return <span className="border-2 border-yellow-400 py-1 px-2 rounded-2xl  ">Pending</span>
+        case "shipped":
+            return <span className="border-2 border-orange-500 py-1 px-2 rounded-2xl  ">Shipped</span>
+        case "delivered":
+            return <span className="border-2 border-green-500 py-1 px-2 rounded-2xl  ">Delivered</span>
+        default:
+            return <span className="border-2 border-red-500 py-1 px-2 rounded-2xl  ">Cancelled</span>
+    }
+}
 ```
+
