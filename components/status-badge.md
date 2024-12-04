@@ -1,18 +1,8 @@
-{
-    "title":"Status Badge",
-    "description":"",
-    "frontmatter":{
-    "outline":"deep"
-    },
-    "headers": [],
-    "relativePath": "status-badge.md",
-    "filePath":"status-badge.md"
-}
-{
-"outline":"deep"
-}
+--- 
+outline: deep
+---
 
-# Status Badge
+### Status Badge
 
 ```ts
 export const statusBadge = (status: string) => {

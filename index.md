@@ -8,8 +8,8 @@ hero:
   tagline:
   actions:
     - theme: brand
-      text: Explore 
-      link: /markdown-examples
+      text: Get Started 
+      link: /components/password-toggle
 
 features:
   - title: Password Toggle 
@@ -19,12 +19,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
-{
-    "nav":[
-    {
-    "text": "Docs",
-    "link": "/docs"
-    }
-    ]
-    }
